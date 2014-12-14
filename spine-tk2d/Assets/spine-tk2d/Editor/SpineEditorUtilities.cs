@@ -165,12 +165,12 @@ public class SpineEditorUtilities : AssetPostprocessor {
 		SkeletonRenderer[] arr = Object.FindObjectsOfType<SkeletonRenderer>();
 
 		foreach (SkeletonRenderer r in arr)
-+        	{
-+            		if (!skeletonRendererTable.ContainsKey(r.gameObject.GetInstanceID()))
-+            		{
-+                		skeletonRendererTable.Add(r.gameObject.GetInstanceID(), r.gameObject);
-+            		}
-+        	}
+        	{
+            		if (!skeletonRendererTable.ContainsKey(r.gameObject.GetInstanceID()))
+            		{
+                		skeletonRendererTable.Add(r.gameObject.GetInstanceID(), r.gameObject);
+            		}
+        	}
 
 		SkeletonUtilityBone[] boneArr = Object.FindObjectsOfType<SkeletonUtilityBone>();
 		foreach (SkeletonUtilityBone b in boneArr)
