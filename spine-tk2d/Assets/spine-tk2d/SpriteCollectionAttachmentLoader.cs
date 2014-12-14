@@ -58,8 +58,8 @@ public class SpriteCollectionAttachmentLoader : AttachmentLoader {
 		tk2dSpriteDefinition def = sprites.inst.GetSpriteDefinition(name);
 		
 		if (def == null) {
-			Debug.Log("Sprite not found in atlas: " + name, sprites);
-			throw new Exception("Sprite not found in atlas: " + name);
+			// Debug.Log("Sprite not found in atlas: " + name, sprites);
+			// throw new Exception("Sprite not found in atlas: " + name);
 		}
 		if (def.complexGeometry)
 			throw new NotImplementedException("Complex geometry is not supported: " + name);
